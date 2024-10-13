@@ -5,8 +5,8 @@ public class SistemaBancario {
 
         int opcao = 0;
         double saldo = 0;
-        double deposito = 0;
-        double saque = 0;
+        double deposito ;
+        double saque ;
         Scanner leitura = new Scanner(System.in);
         String menu = """
                 ********************
@@ -30,7 +30,7 @@ public class SistemaBancario {
             }else if (opcao == 3) {
                 System.out.print("quanto voçê quer sacar: ");
                 saque = leitura.nextDouble();
-                if (saque < saldo){
+                if (saque <= saldo){
                     System.out.println("saque de " + saque + " realizado com sucesso!!");
                     saldo -= saque;
                 }else {
