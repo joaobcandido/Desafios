@@ -1,3 +1,5 @@
+package br.com.joao.sistemabancario;
+
 import java.util.Scanner;
 
 public class SistemaBancario {
