@@ -4,6 +4,8 @@ import br.com.joao.minhasmusicas.modelos.MinhasPreferidas;
 import br.com.joao.minhasmusicas.modelos.Musica;
 import br.com.joao.minhasmusicas.modelos.Podcast;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -38,6 +40,12 @@ public class Principal {
         MinhasPreferidas minhasPreferidas = new MinhasPreferidas();
         minhasPreferidas.Avaliacao(meuPodcast);
         minhasPreferidas.Avaliacao(minhaMusica);
+
+        ArrayList<Musica> musica = new ArrayList<Musica>();
+
+        musica.add(minhaMusica);
+        System.out.println(musica.size());
+        System.out.println(musica.get(0).getTitulo());
 
     }
 }
